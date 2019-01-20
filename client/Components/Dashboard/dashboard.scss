@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F9F8F8;
+}
+
+/* header */
+.app-top {
+  display: flex;
+  background: #000000d0;
+  z-index: 99;
+  align-content: center;
+
+  span {
+    color: #ffffff;
+    margin-left: auto;
+    padding-right: 10%;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    
+    img {
+      width: 15px;
+      margin-left: 5px;
+    }
+  }
+}
+
+
+
+/* input */
+
+input[type='date'] {
+  border: none;
+  box-shadow: inset 0px 1px 5px #00000075;
+  border-radius: 2px;
+  height: 32px;
+  width: 170px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    background: url(https://img.icons8.com/color/96/3B5998/calendar.png) no-repeat center;
+    width: 20px;
+    height: 20px;
+    background-size: 70%;
+}
+
+input:focus {
+  outline: none;
+}
+
+.filter-button {
+  background: #C4C4C4;
+  color: #ffffff;
+  border-radius: 2px;
+  height: 32px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filter-button:focus {
+  outline: none;
+}
+
+select {
+  border: none;
+  height: 32px;
+  margin: 0 10px;
+  background: #E5E3E3;
+  font-size: 14px;
+}
+
+.month {
+  width: 168px;
+}
+
+.date {
+  display: grid;
+  text-align: left;
+}
+
+.date span {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.chat-logo-column {
+  margin: 0 auto;
+}
+
+.chat-logo {
+  width: 210px;
+  margin-top: -35px;
+}
+
+ .spinner:before {
+    position: absolute;
+    animation: spinner 1s ease infinite;
+}
+
+svg {
+  position: absolute;
+  animation: spinner 1s ease infinite;
+}
+
+ @keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fb-class {
+  background-color: #3B5998;
+}
+
+.insta-class {
+  background-color: #835A36;
+}
+
+twit-class {
+  background-color: #55ACEE;
+}
+
+.fb {
+  background: url('https://img.icons8.com/ios/500/ffffff/communication.png')
+}
+
+.replies {
+  background-color: #e3e3ef !important;
+  padding: 0;
+  border-top: 1px solid #ffffff;
+}
